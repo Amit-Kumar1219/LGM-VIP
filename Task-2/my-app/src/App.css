@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif ;
+  background-color: #A3E4DB;
+}
+
+.head{
+  color: #000;
+  letter-spacing: 0.1rem;
+  margin-left: 10px;
+}
+
+.nav-bar{
+  background-color: #0077b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 350;
+  letter-spacing: 0.1rem;
+}
+
+li,a {
+  font-family: 'Poppins', sans-serif ;
+  font-size: 0.9rem;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding: 0 7px;
+  color: white;
+}
+
+.profile-template{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: gainsboro;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.box{
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+
+.profile-template:before,.profile-template:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: grey;
+  transition: 0.5s;
+  z-index:-1;
+}
+
+.profile-template:hover:before{
+  box-shadow: 0 2px 20px white;
+}
+
+.profile-template:hover:after{
+box-shadow: 0 2px 20px white;
+}
+
+.profile-template .profile-img
+{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  background: whitesmoke;
+  transition: 0.3s ease-out;
+  z-index: 1;
+  }
+
+.profile-template:hover .profile-img
+{
+  bottom: 80px;
+  border: 6px solid whitesmoke;
+  transform: scale(0.8);
+  transition: 0.5 ease-out;
+}
+
+.profile-template .profile-img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: brightness(50%);
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-template .details{
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+.profile-template .details h2{
+  margin: 0;
+  padding: 0;
+  font-weight: 350;
+  font-size: 20px;
+  color:whitesmoke;
+}
+
+button{
+  background-color: #023047;
+  color: #fff;
+  width: 7rem;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #011a27;
+}
