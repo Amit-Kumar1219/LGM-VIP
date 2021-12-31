@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#first-page{
+    background-image: url('sunsett.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15% 50%;
+}
+.container-2{
+    padding: 10px 23%;
+    align-items: center;
+}
+
+.container-1{
+    padding: 10px 23%;
+    color: #ffffff;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li,a {
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0 6px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: yellow;
+}
+.front{
+    font-family: 'Poppins', sans-serif ;
+    margin: 10% 40% 15% 0;
+}
+button{
+    width: 7rem;
+    padding: 0.8rem;
+    margin-top: 15px;
+    font-size: 0.65rem;
+    border: none;
+    cursor: pointer;
+}
+
+.heading{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding: 30px 0;
+    text-align: center;
+}
+h1{
+    letter-spacing: 0.1rem;
+}
+hr{
+    border-left-width: 1px;
+    border-top-width: 0;
+    color: grey;
+}
+.cont-ul{
+    color: #000000;
+}
+.cards{
+    text-align: center;
+    margin: 0;
+    padding: 0 15px;
+    line-height: 1.6rem;
+    width: 280px;
+    height: auto;
+    column-gap: 150px;
+}
+.templates{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+h3{
+    margin: 10px 0;
+}
+.pro-cards{
+    text-align: left;
+    margin: 0;
+    line-height: 1.4rem;
+    cursor: pointer;
+}
+.pro-content{
+    padding: 40px;
+}
+.pro-cards:hover{
+    color: yellow;
+}
+.pro-img{
+    background-image: url('magazine-front.jpg');
+    background-size: cover;
+}
+#container-5{
+    background-color: #b339b3;
+    padding-bottom: 70px;
+}
+.carousal{
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+}
+.vid-player{
+    width: 500px;
+    padding: 0 10px ;
+}
+
+video{
+    width: 100%;
+}
+.carousal-item-btn{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    width: 100%;
+    justify-content: space-between;
+}
+.carousal-item-btn button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.carousal-item-btn button #car-bt-prev{
+    margin-left: 20px;
+}
+
+.carousal-item-btn button #car-bt-next{
+    margin-right: 20px;
+}
+.vid-title{
+    float: left;
+    font: bold;
+    font-size: 0.8rem;
+}
+.vid-time{
+    float: right;
+    font: bold;
+    font-size: 0.8rem;
+}
+.video-div{
+    position: relative;
+    width: 100%;
+}
+.small-fonts{
+    color: grey; 
+    font-size: 0.8rem; 
+    margin: 9px 0;
+}
+.team-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.team-grid{
+    margin: 10px;
+}
+td{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+.Member{
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+}
+.team-profile{
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.team-details{
+    padding: 10px;
+}
+.Member:hover .overlay-icons{
+    opacity: 1;
+}
+.team-profile:hover {
+    filter: blur(2px);
+}
+.overlay-icons{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    opacity: 0;
+    color: white;
+}
+i{
+    width: 40px;
+    font-size: 1.4rem;
+}
+.container-7{
+    background-color: #beb8b8;
+}
+.Slides-container{
+    position: relative;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+img {
+  vertical-align: middle;
+}
+
+.mySlides {
+display: none;
+}
+
+.cursor {
+cursor: pointer;
+}
+
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+color: #8d8989;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.column {
+float: left;
+width: 16.66%;
+}
+
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+.container-8{
+    background-image: url("Golden-Bridge.jpg");
+    background-position: center;
+    position: relative;
+}
+.login-div{
+    display: flex;
+    justify-content: center;
+    padding: 7px  0 150px 0; 
+}
+.input-box[type = text]{
+    width: 25rem;
+    height: 41px;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+}
+.button-div{
+    display: flex;
+    flex-direction: column;
+}
+#container-10{
+    display: flex;
+    justify-content: center;
+}
+.cont-10-Map{
+    background-image: url("Google-map.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+label{
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin: 15px 0 1px 0;
+}
+input{
+    width: 50%;
+    height: 30px;
+    border: 0;
+}
+footer{
+    padding: 50px;
+}
+
